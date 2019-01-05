@@ -1,0 +1,566 @@
+/*Général : polices utilisées*/
+@font-face {
+	font-family: 'fontawesome';
+	src: url('fonts/fontawesome-webfont.eot') format('eot'),
+		 url('fonts/fontawesome-webfont.svg') format('svg'),
+		 url('fonts/fontawesome-webfont.woff') format('woff'),
+		 url('fonts/fontawesome-webfont.ttf') format('trutype');
+}
+
+@font-face {
+	font-family: 'glyphicons';
+	src: url('fonts/glyphicons-halflings-regular.eot') format('eot'),
+		 url('fonts/glyphicons-halflings-regular.svg') format('svg'),
+		 url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'roboto-bold';
+	src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'roboto-regular';
+	src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+#bloc-page {
+	display:flex;
+	flex-direction: column;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+/*En-tête fixe*/
+header {
+	display: flex;
+	position: fixed;
+	z-index: 3;
+	justify-content: space-around;
+	width: 100%;
+	height: 8em;
+	background-origin: fixed;
+	background-color: white;
+}
+
+/*logo*/
+#titre-principal {
+	padding-top: 1em;
+}
+
+header img {
+	width: 100%;
+	height: auto;
+}
+
+
+/*Menu de base*/
+
+#menu-header {
+	display: inline-block;
+	margin-left: 2em;
+	padding-top: 3.5em;
+}
+
+#menu-header a {
+	padding-top: 3.25em;
+	padding-right: 1em;
+	padding-left: 1em;
+	color: black;
+	font-family: 'fontawesome', 'Arial';
+	font-weight: large;
+	text-decoration: none;
+}
+
+#menu-header a:hover {
+	border-top: 0.3em solid rgb(92, 173, 211);
+}
+
+/*Menu hamburger responsive*/
+label {
+	margin: 0em 1em 0 0;
+	font-size : 2em;
+	display: none;
+}
+
+#hamburger {
+	display: none;
+}
+
+@media all and (max-width: 1024px) {
+	label {
+		display: block;
+		float: right;
+		padding-bottom: 0.5em;
+		cursor: pointer;
+	}
+	.menu{
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	#menu-header a{
+		display: block;
+		padding: 1em 0.5em 0.5em 0.5em;
+		border-bottom: 1px solid lightgrey;
+		background-color: white;
+	}
+
+	#hamburger:checked + .menu {
+		display: block;
+	}
+	#menu-header a:hover {
+		border-top: none;
+		border-bottom: 0.3em solid rgb(92, 173, 211);
+
+	}
+}
+/*section accueil*/
+
+
+#accueil {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	vertical-align: center;
+	margin: auto;
+}
+
+/*bannière*/
+.enfant-peinture{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	margin: 0;
+	margin-top: 8em;
+}
+
+.fleches {
+	position: absolute;
+	z-index: 2;
+	width: 2%;
+	height: auto;
+	margin-top: 25em;
+	opacity: 0.5;
+	color: whiteF;
+}
+
+#fleche-droite {
+	margin-right: 0;
+	margin-left: 98%;
+}
+
+@media all and (max-width: 1024px){
+	.fleches{
+		margin-top: 12em;
+	}
+}
+/*texte de la bannière*/
+#texte-diapo {
+	position: absolute;
+	z-index: 2;
+	margin-top: 15%;
+	margin-left: 10%;
+}
+
+@media all and (max-width: 1024px) {
+	#texte-diapo{
+		display: flex;
+		flex-direction: column;
+		position: static;
+		margin: auto;
+	}
+}
+
+#accueil h2 {
+	margin-bottom: 0.5em;
+	color: white;
+	font-family: 'roboto-bold', 'Impact';
+	text-transform: uppercase;
+	font-size: 2.5vw;
+}
+
+@media all and (max-width: 1024px) {
+	br{
+		display: none;
+	}
+	#accueil h2{
+		color: lightgrey;
+	}
+
+}
+
+.webagency {
+	color: rgb(92, 173, 211);
+}
+
+#accueil p {
+	margin-top: 0;
+	margin-bottom: 2.5em;
+	color : white;
+	font-family: 'roboto-bold', 'Impact';
+	font-size: 1vw;
+}
+@media all and (max-width: 1024px) {
+	#accueil p{
+		color: lightgrey;
+		text-align: center;
+	}
+}
+
+.bouton-bleu {
+	width : auto;
+	padding: 1em 1.5em 1em 1.5em;
+	border: 1px solid rgb(92, 173, 211);
+	border-radius: 0.5em;
+	box-shadow: 0px 5px 0px rgb(68, 148, 187);
+	background-color: rgb(92, 173, 211);
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'fontawesome', Arial;
+}
+
+@media all and (max-width: 1024px){
+	.bouton-bleu{
+		box-shadow: none;
+	}
+}
+/*bande grisée sous la bannière*/
+
+#bande-grisee
+{
+	width: 100%;
+	height: 10em;
+	background-image: linear-gradient(white, whitesmoke);
+}
+
+@media all and (max-width: 1024px)
+{
+	#bande-grisee{
+		height: 1em;
+	}
+}
+/*Nos Services*/
+/*1ère section*/
+.presentation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin : auto;
+	margin-top: 0;
+	padding-top: 0;
+	font-family: 'roboto-regular', Arial;
+}
+
+.presentation h2 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.5vw;
+}
+
+.presentation p {
+	margin-top: 2%;
+	font-size: 1vw;
+	text-align: center;
+}
+
+.separateur {
+	padding-top: 1em;
+	width: 10%;
+	height: auto;
+}
+
+@media all and (max-width: 1024px) {
+	.presentation br
+	{
+		display: none;
+	}
+
+	.separateur {
+		padding: 0;
+		margin : 0;
+	}
+}
+
+/*2ème section*/
+#liste-des-services {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: auto;
+}
+
+@media all and (max-width: 1024px) {
+	#liste-des-services{
+		flex-direction: column-reverse;
+	}
+}
+
+
+/*tableau de la liste des services*/
+table {
+	margin: auto;
+	padding-top: 2em;
+	font-family:'roboto-regular', Arial;
+	text-align: left;
+}
+
+th {
+	margin: auto;
+	font-weight: bold;
+	font-size: 1vw;
+	text-align: left;
+}
+
+td {
+		padding-right: 2em;
+		padding-bottom: 2em;
+		font-size: 1vw;
+}
+
+.logos {
+	width: 100%;
+	height: auto;
+}
+
+@media all and (max-width: 1024px) {
+	.logos {
+		width: 30%;
+		height: auto;
+	}
+
+	td
+	{
+		padding-right: 0.1em;
+	}
+
+	th{
+		padding: 0;
+	}
+
+	br {
+		display: none;
+	}
+}
+
+
+/*image du mac*/
+aside {
+	text-align: center;
+	margin : auto;
+	padding: auto;
+}
+
+.mac {
+	width:100%;
+	height: auto;
+	margin: auto;
+	padding: auto;
+}
+
+/*Section nos projets*/
+/*Pour la mise en forme du titre, voir la mise de la section"accueil" --> .presentation*/
+/*SAUF le séparateur, qui dans cette section est fait en CSS*/
+
+/*Séparateur en CSS*/
+
+.separateur-en-css {
+	position: relative;
+	margin: auto;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background-color: rgb(92, 173, 211);
+	border: 0.3em solid white;
+}
+
+.separateur-en-css::after {
+	width: 10px;
+	border-bottom: 3px solid grey;
+}
+
+/*fond gris de la section "Nos Projets"*/
+
+section #projets {
+	background-color: rgba(245, 245, 245, 0.5);
+}
+
+/*Menu de la section "Nos projets"*/
+
+#menu-portfolio {
+	display: flex;
+	margin: auto;
+	margin-top: 2%;
+	margin-right: 0;
+	margin-left: 0;
+	justify-content: center;
+}
+
+#menu-portfolio a {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	padding: 1em 1.5em 1em 1.5em;
+	background-color: rgb(229, 229, 229);
+	font-family:'roboto-regular', Arial;
+	font-size: 1vw;
+	color: rgb(112, 115, 120);
+	text-decoration: none;
+}
+
+#premier {
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+
+#dernier {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+@media all and (max-width: 1024px) {
+	#menu-portfolio {
+		flex-direction: column;
+		text-align: center;
+		margin-right: 40%;
+		margin-left: 40%;
+	}
+
+	#menu-portfolio a {
+		margin: 1%;
+	}
+}
+
+/*flèche en css*/
+#menu-portfolio a:hover {
+	padding: 1em 1.5em 1em 1.5em;
+	background-color: rgb(92, 173, 211);
+	border-bottom: 0.3em solid rgb(70, 140, 173);
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'fontawesome', Arial;
+}
+
+#menu-portfolio a::after {
+	content: '';
+	position: absolute;
+	display: none;
+	top: 3.25em;
+	left: 40%;
+	height: 0;
+	width: 0;
+	border: 0.80em solid;
+	border-color: rgb(70, 140, 173) transparent transparent transparent;
+}
+
+#menu-portfolio a:hover::after {
+	display: block;
+}
+
+#menu-portfolio #premier a:hover {
+	border-top-left-radius: 0.5em;
+	border-bottom-left-radius: 0.5em;
+}
+
+#menu-portfolio #dernier a:hover {
+	border-top-right-radius: 0.5em;
+	border-bottom-right-radius: 0.5em;
+}
+
+@media all and (max-width: 1024px) {
+	#menu-portfolio a:hover::after {
+	display: none;
+	}
+}
+
+/*Images du portfolio*/
+#images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 5em;
+}
+
+@media all and (max-width: 1024px) {
+	#images {
+		margin-top: 0.5em;
+	}
+}
+
+.portfolio {
+	background-size: cover;
+	width: 100%;
+	max-width: 350px;
+	height: auto;
+	margin:auto;
+}
+
+figure {
+	position: relative;
+}
+
+.survol-image {
+	display: inline-block;
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+	height: 40%;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(50, 50, 50, 0.50);
+	text-align: left;
+	font-family: 'roboto-regular', Arial;
+	font-weight: bold;
+	color: white;
+}
+
+.bouton {
+	position: absolute;
+	right: 10%;
+	bottom: 78%;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	background-color: rgb(70, 146, 177);
+	border: 0.2em solid white;
+	color: white;
+}
+
+.survol-image h3 {
+	margin-bottom: 0;
+	padding-left: 0.5em;
+	font-family: 'roboto-bold', Arial;
+	font-size: 1.5vw;
+}
+
+.survol-image p {
+	margin-top: 0;
+	padding-left: 0.80em;
+	font-size: 1vw;
+}
+
+@media all and (max-width: 1024px) {
+	.bouton {
+		bottom: 60%;
+	}
+}
+
+figure a:hover + .survol-image {
+	visibility: visible;
+}
+
+/*footer*/
+footer {
+	margin: 8em;
+}

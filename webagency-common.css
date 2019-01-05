@@ -1,0 +1,83 @@
+/*Général : polices utilisées*/
+@font-face {
+	font-family: 'fontawesome';
+	src: url('fonts/fontawesome-webfont.eot') format('eot'),
+		 url('fonts/fontawesome-webfont.svg') format('svg'),
+		 url('fonts/fontawesome-webfont.woff') format('woff'),
+		 url('fonts/fontawesome-webfont.ttf') format('trutype');
+}
+
+@font-face {
+	font-family: 'glyphicons';
+	src: url('fonts/glyphicons-halflings-regular.eot') format('eot'),
+		 url('fonts/glyphicons-halflings-regular.svg') format('svg'),
+		 url('fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('fonts/glyphicons-halflings-regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'roboto-bold';
+	src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'roboto-regular';
+	src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+
+#bloc-page {
+	display:flex;
+	flex-direction: column;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+/* Titres cachés */
+
+.titres-caches {
+	display: none;
+}
+
+
+/*Séparateur en CSS*/
+
+.separateur-en-css {
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 2em;
+	text-align: center;
+	margin: 2%;
+}
+
+.trait {
+	position: relative;
+	width: 16%;
+	margin-right: auto;
+	margin-left: auto;
+	border-bottom: 1px solid rgb(235, 235, 235);
+	top: 45%;
+}
+
+.boite-rond {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+}
+
+
+.rond {
+	position: relative;
+	width: 2em;
+	height: 2em;
+	bottom: 1em;
+	border-radius: 50%;
+	background-color: rgb(70, 146, 177);
+	border: 0.3em solid white;
+}

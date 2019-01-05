@@ -1,0 +1,152 @@
+
+/*HEADER*/
+
+/*Menu hamburger responsive*/
+label {
+	margin: 0em 1em 0 0;
+	font-size : 2em;
+	display: none;
+}
+
+#hamburger {
+	display: none;
+}
+
+@media all and (max-width: 1024px) {
+	label {
+		display: block;
+		float: right;
+		padding-bottom: 0.5em;
+		cursor: pointer;
+	}
+	.menu{
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	#menu-header a{
+		display: block;
+		padding: 1em 0.5em 0.5em 0.5em;
+		border-bottom: 1px solid lightgrey;
+		background-color: white;
+	}
+
+	#hamburger:checked + .menu {
+		display: block;
+	}
+	#menu-header a:hover {
+		border-top: none;
+		border-bottom: 0.3em solid rgb(92, 173, 211);
+
+	}
+}
+
+
+/*ACCUEIL*/
+
+@media all and (max-width: 1024px) {
+	#texte-banniere br{
+		display: block;
+	}
+
+	.bouton-bleu {
+		box-shadow: none;
+	}
+}
+
+/*Bande grisée sous la bannière*/
+@media all and (max-width: 1024px)
+{
+	#bande-grisee{
+		height: 1em;
+	}
+}
+
+/*NOS SERVICES*/
+/*Première section*/
+@media all and (max-width: 1024px) {
+	.presentation br
+	{
+		display: none;
+	}
+}
+
+/*2ème section*/
+
+@media all and (max-width: 1024px) {
+	#liste-des-services{
+		flex-direction: column-reverse;
+	}
+}
+
+/*Tableau de la liste des services*/
+@media all and (max-width: 1024px) {
+	.logos {
+		width: 30%;
+		height: auto;
+	}
+	
+	table {
+		max-width: 100%;
+	}
+	
+	td {
+		padding-right: 0.1em;
+	}
+
+	th {
+		padding: 0;
+	}
+
+	br {
+		display: none;
+	}
+}
+
+/*NOS PROJETS*/
+
+/*Menu de la section*/
+@media all and (max-width: 1024px) {
+	#menu-portfolio {
+		flex-direction: column;
+		text-align: center;
+		margin-right: 40%;
+		margin-left: 40%;
+	}
+
+	#menu-portfolio a {
+		margin: 1%;
+	}
+}
+
+/*Flèches en Css*/
+@media all and (max-width: 1024px) {
+	#menu-portfolio a:hover::after {
+	display: none;
+	}
+}
+
+/*Images du portfolio*/
+
+@media all and (max-width: 1024px) {
+	#images {
+		margin-top: 0.5em;
+	}
+}
+
+/*Texte, bouton et fond transparent qui apparaissent au survol*/
+@media all and (max-width: 1024px) {
+	.bouton {
+		bottom: 60%;
+	}
+}
+
+/* CONTACT */
+
+/* formulaire, ombre du bouton "send message" */
+
+@media all and (max-width: 1024px) {
+	#contact button {
+		box-shadow: none;
+	}
+}

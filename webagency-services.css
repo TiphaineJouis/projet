@@ -1,0 +1,76 @@
+/*Nos Services*/
+/*1ère section*/
+.presentation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin : auto;
+	margin-top: 0;
+	padding-top: 0;
+	font-family: 'roboto-regular', Arial;
+}
+
+.presentation h2 {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 4vw;
+}
+
+.presentation p {
+	margin-top: 2%;
+	font-size: 2vw;
+	text-align: center;
+}
+
+
+/*2ème section*/
+
+#liste-des-services {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-bottom: auto;
+}
+
+/*tableau de la liste des services*/
+table {
+	margin: auto;
+	margin-right: 0;
+	max-width: 50%;
+	padding-top: 2em;
+	font-family:'roboto-regular', Arial;
+	text-align: left;
+}
+
+th {
+	margin: auto;
+	font-weight: bold;
+	font-size: 1.7vw;
+	text-align: left;
+}
+
+td {
+		padding-right: 3em;
+		padding-bottom: 2em;
+		font-size: 1.7vw;
+}
+
+.logos {
+	width: 400%;
+	height: auto;
+}
+
+
+/*image du mac*/
+aside {
+	text-align: center;
+	margin : auto;
+	margin-top: 0;
+}
+
+.mac {
+	width:100%;
+	height: auto;
+	margin: auto;
+	padding-top: 0;
+}

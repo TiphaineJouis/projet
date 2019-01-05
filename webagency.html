@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="webagency, projet 1, openclassrooms" />
+		<meta name="keywords" content="développement web, front end, html, css, webagency" />
+		<meta name="author" content="Tiphaine Jouis" />
+		
+		<!--Feuilles de style-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous" />
+		
+		<link rel="stylesheet" href="webagency-common.css" />
+		<link rel="stylesheet" href="webagency-header.css" />
+		<link rel="stylesheet" href="webagency-accueil.css" />
+		<link rel="stylesheet" href="webagency-services.css" />
+		<link rel="stylesheet" href="webagency-projets.css" />
+		<link rel="stylesheet" href="webagency-contact.css" />
+		<link rel="stylesheet" href="webagency-mquerries.css" />		
+		
+		<title>WebAgency</title>
+
+	</head>
+<body>
+	<div id="bloc-page">
+		<header>
+			<div id="titre-principal">
+				<h1>
+					<img src="images/logo.png" alt="Logo de la WebAgency" />
+				</h1>
+			</div>
+
+			<nav id="menu-header">
+				<!-- Menu hamburger responsive -->
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" name="hamburger" id="hamburger" />
+
+				<!-- Menu de base -->
+				<div class="menu">
+					<a href="#accueil">Accueil</a>
+					<a href="#services">Services</a>
+					<a href="#projets">Portfolio</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<div id="accueil">
+				<!--Images de la bannière-->
+				<div id="banniere"><img src="images/slider/enfant-peinture.jpg" alt="Une enfant avec les mains tâchées de peinture" class="enfant-peinture" />
+				
+					<div id="barre-fleches">
+						<button id="bouton-fleche-gauche"><i class="fas fa-chevron-left" id="fleche-gauche"></i></button>
+						<button id="bouton-fleche-droite"><i class="fas fa-chevron-right" id="fleche-droite"></i></button>
+					</div>
+
+					<!--Texte de la bannière-->
+					<div id="texte-banniere">
+						<h2><a class="webagency">WebAgency</a> : l'agence de tous<br /> vos projets !</h2>
+						<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+						<p><a href="#" class="bouton-bleu">Plus d'infos</a></p>
+					</div>
+				</div>
+			</div>
+
+			<aside>
+				<div id="bande-grisee"></div>
+			</aside>
+			
+		</section>
+
+		<section>
+			<div id="services">
+				<h2 class="titres-caches">Services</h2>
+
+				<article class="presentation">
+					<h2>Nos services</h2>
+
+					<div class="separateur-en-css">
+						<div class="trait"></div>
+						<div class="boite-rond">
+							<button class="rond"></button>
+						</div>
+					</div>
+
+					<p>La WebAgency vous assure une prestation de qualité, basée sur la recherche de la performance et l'élaboration d'une stratégie digitale pertinente.</p>
+				</article>
+
+				<article id="liste-des-services">
+					<h3 class="titres-caches">Services proposés</h3>
+					<table>
+						<tr>
+							<td rowspan="2"><img src="images/logo-ux1.png" alt="#" class="logos" /></td>
+							<th>UX Design</th>
+						</tr>
+
+						<tr>
+							<td>Nos experts en ergonomie garantissent, pour vous et vos clients, une expérience utilisateur professionnelle, novatrice et pertinente pour votre secteur d'activité !</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2"><img src="images/logo-ui1.png" alt="#" class="logos" /></td>
+							<th>UI Design</th>
+						</tr>
+
+						<tr>
+							<td>Un site simple et intuitif est un atout pour une marque.<br /> Efficacité, rapidité, harmonie, modernité !</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2"><img src="images/logo-seo1.png" alt="#" class="logos" /></td>
+							<th>SEO</th>
+						</tr>
+
+						<tr>
+							<td>Profitez pleinement d'un référencement optimal, adapté à votre situation !<br />La WebAgency vous assure une visibilité de premier ordre !</td>
+						</tr>
+					</table>
+
+					<aside>
+						<p><img src="images/main-feature.png" alt="Photographie d'un mac fixe" class="mac" /></p>
+					</aside>
+				</article>
+
+			</div>
+		</section>
+
+		<section>
+			<h2 class="titres-caches">Projets</h2>
+			<div id="projets">
+				<article class="presentation">
+					<h2>Nos projets</h2>
+
+					<div class="separateur-en-css">
+						<div class="trait"></div>
+						<button class="rond"></button>
+					</div>
+
+					<p>Vous souhaitez un site personnel ? Un site professionnel ? Une plateforme de vente en ligne ? Un blog innovant pour présenter votre marque ou votre travail ?<br />La WebAgency est là pour vous !</p>	
+				</article>
+
+				<div id="menu-portfolio">
+					<a href="#" id="premier">All Works</a>
+					<a href="#">Creative</a>
+					<a href="#">Corporate</a>
+					<a href="#" id="dernier">Portfolio</a>
+				</div>
+
+				<div id="triangle"></div>
+				
+				<aside id="images">
+					<figure>
+						<a href="#"><img src="images/portfolio/lunettes.jpg" alt="Lunettes posées sur un nez" id="lunettes" class="portfolio" /></a>
+						<figcaption id="texte-lunettes" class="survol-image">
+							<h3>Optica</h3>
+							<p>Opticien en ligne</p>			
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<a href="#"><img src="images/portfolio/lapin.jpg" alt="Personne déguisée en lapin rose" id="lapin" class="portfolio" /></a>
+						<figcaption id="texte-lapin" class="survol-image">
+							<h3>Baptiste Japlan</h3>
+							<p>Illustrateur jeunesse</p>			
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a href="#"><img src="images/portfolio/pompadour.jpg" alt="Logo de Pompadour" id="pompadour" class="portfolio" /></a>
+						<figcaption id="texte-pompadour" class="survol-image">
+							<h3>Pompadour</h3>
+							<p>Chaussures véganes</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a href="#"><img src="images/portfolio/papier.jpg" alt="Plans sur papier" id="papier" class="portfolio" /></a>
+						<figcaption id="texte-papier" class="survol-image">
+							<h3>MSE</h3>
+							<p>Mutuelle pour les entrepreneurs</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure> 
+
+					<figure>
+						<a href="#"><img src="images/portfolio/sacs.jpg" alt="Sacs de shopping" id="sacs" class="portfolio" /></a>
+						<figcaption id="texte-sacs" class="survol-image">
+							<h3>Le Redoux</h3>
+							<p>Enseigne de vente en ligne</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a href="#"><img src="images/portfolio/villes.jpg" alt="Dessins de différents types de villes" id="villes" class="portfolio" /></a>
+						<figcaption id="texte-villes" class="survol-image">
+							<h3>Art'chi</h3>
+							<p>Cabinet d'architecture</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a href="#"><img src="images/portfolio/fusee.jpg" alt="Fusée qui transperce un écran" id="fusee" class="portfolio" /></a>
+						<figcaption id="texte-fusee" class="survol-image">
+							<h3>Décollage immédiat</h3>
+							<p>Plateforme de financement</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+					<figure>
+						<a href="#"><img src="images/portfolio/bureau.jpg" alt="Accesssoires de bureau" id="bureau" class="portfolio" /></a>
+						<figcaption id="texte-bureau" class="survol-image">
+							<h3>Tout pour le bureau</h3>
+							<p>Papeterie et accessoires de bureau</p>
+							<button class="bouton"><i class="far fa-eye"></i></button>
+						</figcaption>
+					</figure>
+
+				</aside>
+
+			</div>
+		</section>
+
+		<section>
+			<div id="contact">
+					<div id="map">
+						
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2156022977997!2d2.3476356159063143!3d48.87316630761985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d'Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1507309434554">
+						</iframe>
+						
+						<div id="filtre"></div>
+					</div><br />
+
+					
+					<div id="formulaire"> 
+						<form>
+							<h3>Contact Info</h3>
+							<h4>Web Agency SAS</h4>
+							<p>25 rue d'Hauteville 75010 Paris<br />
+							<span id="tel">Tel:</span> 01 02 03 04 05</p>
+
+							<p><input type="text" name="nom" id="name" placeholder="Name" Size="25" /></p>
+							<p><input type="email" name="mail" id="mail" placeholder="Email" Size="25" /></p>
+							<p><input type="text" name="sujet" id="sujet" placeholder="Subject" Size="25" /></p>
+							<p><textarea name="message" id="message" placeholder= "Message" rows="7" cols="25"></textarea></p>
+						
+							<button>Send Message</button>
+					</form>
+					</div>
+			</div>
+		</section>
+
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+
+</html>
